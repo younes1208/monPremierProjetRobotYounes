@@ -13,7 +13,8 @@ loginTest
   Set Browser Implicit Wait    5
   Click Element    link=Logout
   Log    ceci_est_un_test_execute_par %{userName} dans %{os}
- # Log    %{os}          
+ # Log    %{os}   
+   log    ceci est simple test   
   Log    fin de test, aurevoir 
   
 *** Variables ***
