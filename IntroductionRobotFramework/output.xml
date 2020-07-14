@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200713 19:44:46.720" rpa="false">
+<suite id="s1" name="IntroductionRobotFramework" source="C:\Users\HP\eclipse-workspace\IntroductionRobotFramework">
+<suite id="s1-s1" name="Tests" source="C:\Users\HP\eclipse-workspace\IntroductionRobotFramework\Tests">
+<suite id="s1-s1-s1" name="Login" source="C:\Users\HP\eclipse-workspace\IntroductionRobotFramework\Tests\login.robot">
+<test id="s1-s1-s1-t1" name="loginTest">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20200713 19:44:48.092" level="INFO">Opening browser 'gc' to base url 'https://opensource-demo.orangehrmlive.com/index.php/auth/login'.</msg>
+<status status="PASS" starttime="20200713 19:44:48.091" endtime="20200713 19:44:58.743"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200713 19:44:58.744" endtime="20200713 19:45:01.510"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtUsername</arg>
+<arg>&amp;{dataLogin}[key1]</arg>
+</arguments>
+<msg timestamp="20200713 19:45:01.512" level="WARN">Accessing variable items using '&amp;{dataLogin}[key1]' syntax is deprecated. Use '${dataLogin}[key1]' instead.</msg>
+<msg timestamp="20200713 19:45:01.513" level="INFO">Typing text 'Admin' into text field 'id=txtUsername'.</msg>
+<status status="PASS" starttime="20200713 19:45:01.511" endtime="20200713 19:45:02.463"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtPassword</arg>
+<arg>&amp;{dataLogin}[key2]</arg>
+</arguments>
+<msg timestamp="20200713 19:45:02.466" level="WARN">Accessing variable items using '&amp;{dataLogin}[key2]' syntax is deprecated. Use '${dataLogin}[key2]' instead.</msg>
+<msg timestamp="20200713 19:45:02.467" level="INFO">Typing password into text field 'id=txtPassword'.</msg>
+<msg timestamp="20200713 19:45:02.934" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200713 19:45:03.739" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20200713 19:45:02.464" endtime="20200713 19:45:03.742"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>id=btnLogin</arg>
+</arguments>
+<msg timestamp="20200713 19:45:03.745" level="INFO">Clicking button 'id=btnLogin'.</msg>
+<status status="PASS" starttime="20200713 19:45:03.743" endtime="20200713 19:45:08.303"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=welcome</arg>
+</arguments>
+<msg timestamp="20200713 19:45:08.306" level="INFO">Clicking element 'id=welcome'.</msg>
+<status status="PASS" starttime="20200713 19:45:08.304" endtime="20200713 19:45:10.032"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200713 19:45:10.032" endtime="20200713 19:45:10.059"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>link=Logout</arg>
+</arguments>
+<msg timestamp="20200713 19:45:10.061" level="INFO">Clicking element 'link=Logout'.</msg>
+<status status="PASS" starttime="20200713 19:45:10.060" endtime="20200713 19:45:12.162"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>ceci_est_un_test_execute_par %{userName} dans %{os}</arg>
+</arguments>
+<msg timestamp="20200713 19:45:12.176" level="INFO">ceci_est_un_test_execute_par HP dans Windows_NT</msg>
+<status status="PASS" starttime="20200713 19:45:12.165" endtime="20200713 19:45:12.181"></status>
+</kw>
+<doc>ceci est un test de loginlogout</doc>
+<status status="PASS" starttime="20200713 19:44:48.088" endtime="20200713 19:45:12.191" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200713 19:44:46.994" endtime="20200713 19:45:12.195"></status>
+</suite>
+<status status="PASS" starttime="20200713 19:44:46.984" endtime="20200713 19:45:12.240"></status>
+</suite>
+<status status="PASS" starttime="20200713 19:44:46.856" endtime="20200713 19:45:12.275"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="IntroductionRobotFramework">IntroductionRobotFramework</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Tests">IntroductionRobotFramework.Tests</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="Login">IntroductionRobotFramework.Tests.Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20200713 19:45:01.512" level="WARN">Accessing variable items using '&amp;{dataLogin}[key1]' syntax is deprecated. Use '${dataLogin}[key1]' instead.</msg>
+<msg timestamp="20200713 19:45:02.466" level="WARN">Accessing variable items using '&amp;{dataLogin}[key2]' syntax is deprecated. Use '${dataLogin}[key2]' instead.</msg>
+</errors>
+</robot>
